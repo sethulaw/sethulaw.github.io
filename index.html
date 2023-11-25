@@ -84,8 +84,9 @@
         $('.sidenav').sidenav();
         $('.collapsible').collapsible();
         $(".dropdown-trigger").dropdown({ hover: true });
-        $('.modal').modal({dismissable:false});
-        $('#modal1').modal('open')
+        $('.modal').modal();
+        $('#modal1').openModal({
+        dismissible:false});
       });
     </script>
     
