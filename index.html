@@ -11,22 +11,51 @@
   <body>
     
     <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <a href="#" class="brand-logo right thin" title="bcgraphixx">Page Title</a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a class="waves-effect" href="#">Home</a></li>
-                    <li><a class="waves-effect" href="#">About us</a></li>
+        <n<div class="navbar-fixed">
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+      </ul>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Logo</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">First</a></li>
+            <li><a href="#">Second</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="#">Third</a></li>
+            <li><a href="#">Fourth</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li class="logo"><a href="#!" class="brand-logo">Logo</a></li>
+      <li><a href="#">First</a></li>
+      <li><a href="#">Second</a></li>
+      <li>
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Dropdown</a>
+            <div class="collapsible-body">
+                <ul id="" class="">
+                  <li><a href="#!">one</a></li>
+                  <li><a href="#!">two</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!">three</a></li>
                 </ul>
             </div>
-        </nav>
-    </div>
-    <ul class="side-nav" id="mobile-demo">
-       <li><a href="##"><center>MENU</center></a></li>
-       <li><a class="waves-effect" href="#!">Home</a></li>
-       <li><a class="waves-effect" href="#!">About us</a></li>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Third</a></li>
+      <li><a href="#">Fourth</a></li>
     </ul>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
     <!--JavaScript at end of body for optimized loading-->
