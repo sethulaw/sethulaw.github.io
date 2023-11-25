@@ -61,6 +61,17 @@
       <li><a href="#">FAQs</a></li>
       <li><a href="#">Contact Us</a></li>
     </ul>
+
+    <!-- Disclaimer Message -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Disclaimer</h4>
+        <p>Text goes here</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+    </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
@@ -72,6 +83,7 @@
         $('.sidenav').sidenav();
         $('.collapsible').collapsible();
         $(".dropdown-trigger").dropdown({ hover: true });
+        $('.modal').modal()
       });
     </script>
     
