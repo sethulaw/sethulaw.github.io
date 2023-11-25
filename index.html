@@ -9,7 +9,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script type="text/javascript" src="js/materialize.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/sidebar.js"></script>
     </head>
   <body>
     
@@ -30,7 +29,14 @@
        <li><a class="waves-effect" href="#!">Home</a></li>
        <li><a class="waves-effect" href="#!">About us</a></li>
     </ul>
-    
+    <script>
+          $( document ).ready(function(){
+                $('.button-collapse').sideNav({
+                      closeOnClick: true
+                    }
+                  );
+                });
+    </script>
     
   </body>
 </html>
