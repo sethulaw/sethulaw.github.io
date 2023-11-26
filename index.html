@@ -32,7 +32,6 @@
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="#about0">About</a></li>
-            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Practice Areas<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="#">FAQs</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
@@ -43,7 +42,6 @@
     <ul class="sidenav sidenav-close" id="mobile-demo">
       <li class="logo"><a href="#!" class="brand-logo"><img src="images/logo_black.png" width="50" height="50"></a></li>
       <li><a href="#about0">About</a></li>
-      <li>
         <ul class="collapsible collapsible-accordion">
           <li>
             <a class="collapsible-header">Practice Areas</a>
@@ -112,7 +110,7 @@ Explore our website to learn more about Sidhartha's practice and how he can assi
 				<div class="divider"></div>
 		</div>
 		
-        <div class="col s12 m12" style="margin-top:15px;margin-bottom:15px;"><h4><b>Practice Areas</b></h4></div>
+        <div id="pra" class="col s12 m12" style="margin-top:15px;margin-bottom:15px;"><h4><b>Practice Areas</b></h4></div>
 		<div style="padding:15px;">
 		</div>
 		
@@ -146,8 +144,6 @@ Explore our website to learn more about Sidhartha's practice and how he can assi
     <script>
       $( document ).ready(function(){
         $('.sidenav').sidenav();
-        $('.collapsible').collapsible();
-        $(".dropdown-trigger").dropdown({ hover: true });
         $('.modal').modal({dismissible:false});
         $('#modal1').modal('open');
       });
