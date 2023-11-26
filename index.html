@@ -19,19 +19,13 @@
   <body>
     
     <div class="navbar-fixed">
-      <ul id="dropdown1" class="dropdown-content" style="color:black;">
-        <li><a href="#!" style="color:black;">one</a></li>
-		<li class="divider"></li>
-        <li><a href="#!" style="color:black;">tw</a></li>
-        <li class="divider"></li>
-        <li><a href="#!" style="color:black;">three</a></li>
-      </ul>
       <nav>
         <div class="nav-wrapper black">
           <a href="#!" class="brand-logo"><img src="images/logo_white.png" width="50" height="50"></a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="#about0">About</a></li>
+			<li><a href="#practicearea">Practice Areas</a></li>
             <li><a href="#">FAQs</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
@@ -42,21 +36,7 @@
     <ul class="sidenav sidenav-close" id="mobile-demo">
       <li class="logo"><a href="#!" class="brand-logo"><img src="images/logo_black.png" width="50" height="50"></a></li>
       <li><a href="#about0">About</a></li>
-        <ul class="collapsible collapsible-accordion">
-          <li>
-            <a class="collapsible-header">Practice Areas</a>
-            <div class="collapsible-body">
-                <ul id="" class="">
-                  <li><a href="#!">one</a></li>
-				  <li class="divider"></li>
-                  <li><a href="#!">two</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#!">three</a></li>
-                </ul>
-            </div>
-          </li>
-        </ul>
-      </li>
+	  <li><a href="#practicearea">Practice Areas</a></li>
       <li><a href="#">FAQs</a></li>
       <li><a href="#">Contact Us</a></li>
     </ul>
@@ -72,7 +52,7 @@
 <br>The user wishes to gain more information about us for his/her own information and use.</p>
       </div>
       <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        <a id="modalagree" href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
       </div>
     </div>
 
@@ -110,7 +90,7 @@ Explore our website to learn more about Sidhartha's practice and how he can assi
 				<div class="divider"></div>
 		</div>
 		
-        <div id="pra" class="col s12 m12" style="margin-top:15px;margin-bottom:15px;"><h4><b>Practice Areas</b></h4></div>
+        <div id="practicearea" class="col s12 m12" style="margin-top:15px;margin-bottom:15px;"><h4><b>Practice Areas</b></h4></div>
 		<div style="padding:15px;">
 		</div>
 		
@@ -137,15 +117,20 @@ Explore our website to learn more about Sidhartha's practice and how he can assi
     
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
     <script>
-      $( document ).ready(function(){
+      $( document ).ready(function(){;
+		var mycookie = Cookies.get("DisclaimerAgreed");
         $('.sidenav').sidenav();
         $('.modal').modal({dismissible:false});
-        $('#modal1').modal('open');
+        if(mycookie==null||mycookie==false){
+			$('#modal1').modal('open');}
+		$('#modalagree').click(function() {
+				Cookies.set("DisclaimerAgreed", true);
+			});
       });
     </script>
     
