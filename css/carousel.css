@@ -45,4 +45,7 @@
   right: 2%;
 }
 
-.out_btn.waves-effect.waves-light { border: 2px solid black; color:black;}
+.out_btn.waves-effect.waves-black { border: 2px solid black; color:black;}
+.out_btn.waves-effect.waves-black.waves-ripple {
+    background-color: black;
+  }
