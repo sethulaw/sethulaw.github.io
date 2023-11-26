@@ -1,11 +1,11 @@
 <html>
   <head>
-      <link rel="icon" href="images/favicon.ico"/>
+		<link rel="icon" href="images/favicon.ico"/>
       <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="css/carousel.css"  media="screen,projection"/>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <style>
@@ -71,7 +71,6 @@
             </div>
           </div>
         </div>
-		
 		<div id="about0" class="col s12 m12" style="margin-top:15px;margin-bottom:15px;"><h4><b>About</b></h4></div>
 		<div style="padding:25px;">
 				<p id="about00">Welcome to the legal practice of Sidhartha Sethupathy, an esteemed lawyer dedicated to serving Madurai and its surrounding communities. With a passion for justice and a commitment to client advocacy, Sidhartha brings a wealth of experience and expertise to every case he handles.
@@ -87,10 +86,39 @@ Above all, Sidhartha Sethupathy is here to guide you through legal challenges wi
 Explore our website to learn more about Sidhartha's practice and how he can assist you. For personalized legal counsel tailored to your needs, get in touch today.</p>
 				
 		
-				<div class="divider"></div>
+				<div class="divider" style="margin-bottom:10px;"></div>
 		</div>
 		
-        <div id="practicearea" class="col s12 m12" style="margin-top:15px;margin-bottom:15px;"><h4><b>Practice Areas</b></h4></div>
+		<!-- Slider container -->
+		<div class="slider" style="margin-left: auto;margin-right: auto;display: block;">
+		  <!-- slide 1 -->
+		  <div class="slide">
+			<img src="https://source.unsplash.com/random?landscape,mountain" alt="" />
+		  </div>
+
+		  <!-- slide 2 -->
+		  <div class="slide">
+			<img src="https://source.unsplash.com/random?landscape,cars" alt="" />
+		  </div>
+
+		  <!-- slide 3 -->
+		  <div class="slide">
+			<img src="https://source.unsplash.com/random?landscape,night" alt="" />
+		  </div>
+
+		  <!-- slide 4 -->
+		  <div class="slide">
+			<img src="https://source.unsplash.com/random?landscape,city" alt="" />
+		  </div>
+
+		  <!-- Control buttons -->
+		  <a class="btn btn-next"><i class="material-icons">navigate_next</i></a>
+		  <a class="btn btn-prev"><i class="material-icons">navigate_before</i></a>
+		</div>
+		
+		<div class="divider" style="margin:25px;"></div>
+		
+        <div id="practicearea" class="col s12 m12" style="margin-bottom:15px;"><h4><b>Practice Areas</b></h4></div>
 		<div style="padding:15px;">
 		</div>
 		
@@ -132,6 +160,57 @@ Explore our website to learn more about Sidhartha's practice and how he can assi
 				Cookies.set("DisclaimerAgreed", true);
 			});
       });
+	  
+		"use strict";
+		// Select all slides
+		const slides = document.querySelectorAll(".slide");
+
+		// loop through slides and set each slides translateX
+		slides.forEach((slide, indx) => {
+		  slide.style.transform = `translateX(${indx * 100}%)`;
+		});
+
+		// select next slide button
+		const nextSlide = document.querySelector(".btn-next");
+
+		// current slide counter
+		let curSlide = 0;
+		// maximum number of slides
+		let maxSlide = slides.length - 1;
+
+		// add event listener and navigation functionality
+		nextSlide.addEventListener("click", function () {
+		  // check if current slide is the last and reset current slide
+		  if (curSlide === maxSlide) {
+			curSlide = 0;
+		  } else {
+			curSlide++;
+		  }
+
+		  //   move slide by -100%
+		  slides.forEach((slide, indx) => {
+			slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+		  });
+		});
+
+		// select next slide button
+		const prevSlide = document.querySelector(".btn-prev");
+
+		// add event listener and navigation functionality
+		prevSlide.addEventListener("click", function () {
+		  // check if current slide is the first and reset current slide to last
+		  if (curSlide === 0) {
+			curSlide = maxSlide;
+		  } else {
+			curSlide--;
+		  }
+
+		  //   move slide by 100%
+		  slides.forEach((slide, indx) => {
+			slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+		  });
+		});
+
     </script>
     
   </body>
