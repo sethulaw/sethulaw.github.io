@@ -1,8 +1,8 @@
 
 .slider {
   width: 100%;
-  max-width: 800px;
-  height: 300px;
+  max-width: 1280px;
+  height: 500px;
   position: relative;
   overflow: hidden; /* <===  */
   border-radius: 15px;
@@ -10,8 +10,8 @@
 
 .slide {
   width: 100%;
-  max-width: 800px;
-  height: 300px;
+  max-width: 1280px;
+  height: 500px;
   position: absolute;
   transition: all 0.5s;
 }
@@ -44,3 +44,5 @@
   top: 45%;
   right: 2%;
 }
+
+.out_btn.waves-effect.waves-light { border: 2px solid black; color:black;}
