@@ -24,11 +24,10 @@
 
 .btn {
   position: absolute;
+  borde:none;
   background-color:transparent;
+  color:black;
   
-}
-.btn:active {
-  transform: scale(1);
 }
 
 .btn:hover {
