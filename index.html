@@ -1,337 +1,419 @@
 <!DOCTYPE html>
-  <head>
-		<link rel="icon" href="images/favicon.ico"/>
-      <!--Import Google Icon Font-->
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-		<link type="text/css" rel="stylesheet" href="css/carousel.css"  media="screen,projection"/>
-		<link type="text/css" rel="stylesheet" href="css/practice_area.css"  media="screen,projection"/>
-		<meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-		      <!--=============== REMIXICONS ===============-->
-			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+<head>
+	<link rel="icon" href="images/favicon.ico" />
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+	<link type="text/css" rel="stylesheet" href="css/carousel.css" media="screen,projection" />
+	<link type="text/css" rel="stylesheet" href="css/practice_area.css" media="screen,projection" />
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-			  <!--=============== SWIPER CSS ===============-->
-			  <link rel="stylesheet" href="css/swiper-bundle.min.css">
-		
-			  <!--=============== CSS ===============-->
-			  <link rel="stylesheet" href="css/styles.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <style>
-      .sidenav li>a {padding:0 32px !important}
-      .collapsible-body>ul>li>a {
-        padding: 0 48px !important;
-        font-weight: 400 !important;
-      }
-      </style>
-	  <style type="text/css">
-		.mobileshow { 
-		display:none; 
+	<!--=============== REMIXICONS ===============-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+	<!--=============== SWIPER CSS ===============-->
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+	<!--=============== CSS ===============-->
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		.sidenav li>a {
+			padding: 0 32px !important
 		}
+
+		.collapsible-body>ul>li>a {
+			padding: 0 48px !important;
+			font-weight: 400 !important;
+		}
+	</style>
+	<style type="text/css">
+		.mobileshow {
+			display: none;
+		}
+
 		@media screen and (max-width: 600px) {
-		.mobileshow { 
-		display:block; }
+			.mobileshow {
+				display: block;
+			}
 		}
-		.pcshow { 
-		display:none; 
+
+		.pcshow {
+			display: none;
 		}
+
 		@media screen and (min-width: 600px) {
-		.pcshow { 
-		display:block; }
+			.pcshow {
+				display: block;
+			}
 		}
-		
-		</style>
-    </head>
-  <body>
-    
-    <div class="navbar-fixed">
-      <nav>
-        <div class="nav-wrapper black">
-          <a href="#!" class="brand-logo"><img src="images/logo_white.png" width="50" height="50"></a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#about0">About</a></li>
-			<li><a href="#practicearea">Practice Areas</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#contactus">Contact Us</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+	</style>
+</head>
 
-    <ul class="sidenav sidenav-close" id="mobile-demo">
-      <li class="logo"><a href="#!" class="brand-logo"><img src="images/logo_black.png" width="50" height="50"></a></li>
-      <li><a href="#about0">About</a></li>
-	  <li><a href="#practicearea">Practice Areas</a></li>
-      <li><a href="#">FAQs</a></li>
-      <li><a href="#contactus">Contact Us</a></li>
-    </ul>
+<body>
 
-    <!-- Disclaimer Message -->
-    <div id="modal1" class="modal">
-      <div class="modal-content">
-        <h4>Disclaimer</h4>
-        <p>As per the rules of the Bar Council of India, we are not permitted to solicit work and advertise. By clicking on the “Accept” button below, the user acknowledges the following:
-
-<br>There has been no advertisement, personal communication, solicitation, invitation or inducement of any sort whatsoever from us or any of our members to solicit any work through this website.
-
-<br>The user wishes to gain more information about us for his/her own information and use.</p>
-      </div>
-      <div class="modal-footer">
-        <a id="modalagree" href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-      </div>
-    </div>
-
-    <div>
-	<div class="row pcshow" style="background-color:black;padding:5px;">
-		<img class="col m6 l6 responsive" src="images/coverimage.png">
-		<div class="col m6 l6 responsive">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/sidhu.png" style="width:20%;height:auto;margin-top:10px;margin-left:auto;margin-right:auto;display:block;">
-            </div>
-            <div class="card-content">
-              <h4 class="center-align"><b>Sidhartha Sethupathy</b></h4>
-              <h6 class="center-align">Advocate.<br>Phone : 8760444693<br>Mail : sidharthasethupathy@gmail.com<br><br>
-                <a class="out_btn waves-effect waves-black white btn-large" href="mailto:sidharthasethupathy@gmail.com"><i class="material-icons left">mail</i>Mail Advocate</a>
-              </h6>
-            </div>
-          </div>
-        </div>
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper black">
+				<a href="#!" class="brand-logo"><img src="images/logo_white.png" width="50" height="50"></a>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="#about0">About</a></li>
+					<li><a href="#practicearea">Practice Areas</a></li>
+					<li><a href="#">FAQs</a></li>
+					<li><a href="#contactus">Contact Us</a></li>
+				</ul>
+			</div>
+		</nav>
 	</div>
-	<div class="row mobileshow">
-      <div class="col s12">
-          <div class="card z-depth-3">
-            <div class="card-image">
-              <img src="images/sidhu.png" style="width:200px;height:auto;margin-left:auto;margin-right:auto;display:block;">
-            </div>
-            <div class="card-content">
-              <h4 class="center-align"><b>Sidhartha Sethupathy</b></h4>
-              <h6 class="center-align">Advocate.<br>Phone : 8760444693<br>Mail : sidharthasethupathy@gmail.com<br><br>
-                <a class="waves-effect waves-light black btn-large" href="tel:8760444693"><i class="material-icons left">call</i>Call Advocate</a><br><br>
-                <a class="out_btn waves-effect waves-black white btn-large" href="mailto:sidharthasethupathy@gmail.com"><i class="material-icons left">mail</i>Mail Advocate</a>
-              </h6>
-            </div>
-          </div>
-        </div>
-	</div>
-	<div class="row">
-		<div id="about0" class="col s12" style="margin-top:15px;margin-bottom:15px;"><h4><b>About</b></h4></div>
-		<div style="padding:25px;">
-				<p id="about00">Welcome to the legal practice of Sidhartha Sethupathy, an esteemed lawyer dedicated to serving Madurai and its surrounding communities. With a passion for justice and a commitment to client advocacy, Sidhartha brings a wealth of experience and expertise to every case he handles.
-<br><br>
-Having honed his skills in Madurai’s legal landscape, Sidhartha understands the unique challenges individuals and businesses face. His approach is rooted in a deep understanding of the law and a genuine empathy for his clients' needs.
-<br><br>
-</p><p id="about1">Sidhartha believes in fostering strong client relationships built on trust, transparency, and open communication. He takes the time to listen attentively to your concerns, ensuring that every aspect of your case is understood and addressed effectively. Your peace of mind is paramount, and he strives to provide clarity amidst the complexities of the legal process.
-<br><br>
-Specializing in Service and Labour Writs, Sidhartha has successfully represented numerous clients, earning a reputation for his unwavering dedication and positive outcomes. His commitment extends beyond the courtroom; he is a staunch advocate for community empowerment and legal education.
-<br><br></p><p>
-Above all, Sidhartha Sethupathy is here to guide you through legal challenges with integrity, professionalism, and a steadfast focus on achieving the best possible results for you.
-<br><br>
-Explore our website to learn more about Sidhartha's practice and how he can assist you. For personalized legal counsel tailored to your needs, get in touch today.</p>
+
+	<ul class="sidenav sidenav-close" id="mobile-demo">
+		<li class="logo"><a href="#!" class="brand-logo"><img src="images/logo_black.png" width="50" height="50"></a>
+		</li>
+		<li><a href="#about0">About</a></li>
+		<li><a href="#practicearea">Practice Areas</a></li>
+		<li><a href="#">FAQs</a></li>
+		<li><a href="#contactus">Contact Us</a></li>
+	</ul>
+
+	<!-- Disclaimer Message -->
+	<div id="modal1" class="modal">
+		<div class="modal-content">
+			<h4>Disclaimer</h4>
+			<p>As per the rules of the Bar Council of India, we are not permitted to solicit work and advertise. By
+				clicking on the “Accept” button below, the user acknowledges the following:
+
+				<br>There has been no advertisement, personal communication, solicitation, invitation or inducement of
+				any sort whatsoever from us or any of our members to solicit any work through this website.
+
+				<br>The user wishes to gain more information about us for his/her own information and use.
+			</p>
 		</div>
-		<div class="divider" style="margin-bottom:10px;"></div>
+		<div class="modal-footer">
+			<a id="modalagree" href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+		</div>
+	</div>
+
+	<div>
+		<div class="row pcshow" style="background-color:black;padding:5px;">
+			<img class="col m6 l6 responsive" src="images/coverimage.png">
+			<div class="col m6 l6 responsive">
+				<div class="card">
+					<div class="card-image">
+						<img src="images/sidhu.png"
+							style="width:20%;height:auto;margin-top:10px;margin-left:auto;margin-right:auto;display:block;">
+					</div>
+					<div class="card-content">
+						<h4 class="center-align"><b>Sidhartha Sethupathy</b></h4>
+						<h6 class="center-align">Advocate.<br>Phone : 8760444693<br>Mail :
+							sidharthasethupathy@gmail.com<br><br>
+							<a class="out_btn waves-effect waves-black white btn-large"
+								href="mailto:sidharthasethupathy@gmail.com"><i class="material-icons left">mail</i>Mail
+								Advocate</a>
+						</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mobileshow">
+			<div class="col s12">
+				<div class="card z-depth-3">
+					<div class="card-image">
+						<img src="images/sidhu.png"
+							style="width:200px;height:auto;margin-left:auto;margin-right:auto;display:block;">
+					</div>
+					<div class="card-content">
+						<h4 class="center-align"><b>Sidhartha Sethupathy</b></h4>
+						<h6 class="center-align">Advocate.<br>Phone : 8760444693<br>Mail :
+							sidharthasethupathy@gmail.com<br><br>
+							<a class="waves-effect waves-light black btn-large" href="tel:8760444693"><i
+									class="material-icons left">call</i>Call Advocate</a><br><br>
+							<a class="out_btn waves-effect waves-black white btn-large"
+								href="mailto:sidharthasethupathy@gmail.com"><i class="material-icons left">mail</i>Mail
+								Advocate</a>
+						</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="about0" class="col s12" style="margin-top:15px;margin-bottom:15px;">
+				<h4><b>About</b></h4>
+			</div>
+			<div style="padding:25px;">
+				<p id="about00">Welcome to the legal practice of Sidhartha Sethupathy, an esteemed lawyer dedicated to
+					serving Madurai and its surrounding communities. With a passion for justice and a commitment to
+					client advocacy, Sidhartha brings a wealth of experience and expertise to every case he handles.
+					<br><br>
+					Having honed his skills in Madurai’s legal landscape, Sidhartha understands the unique challenges
+					individuals and businesses face. His approach is rooted in a deep understanding of the law and a
+					genuine empathy for his clients' needs.
+					<br><br>
+				</p>
+				<p id="about1">Sidhartha believes in fostering strong client relationships built on trust, transparency,
+					and open communication. He takes the time to listen attentively to your concerns, ensuring that
+					every aspect of your case is understood and addressed effectively. Your peace of mind is paramount,
+					and he strives to provide clarity amidst the complexities of the legal process.
+					<br><br>
+					Specializing in Service and Labour Writs, Sidhartha has successfully represented numerous clients,
+					earning a reputation for his unwavering dedication and positive outcomes. His commitment extends
+					beyond the courtroom; he is a staunch advocate for community empowerment and legal education.
+					<br><br>
+				</p>
+				<p>
+					Above all, Sidhartha Sethupathy is here to guide you through legal challenges with integrity,
+					professionalism, and a steadfast focus on achieving the best possible results for you.
+					<br><br>
+					Explore our website to learn more about Sidhartha's practice and how he can assist you. For
+					personalized legal counsel tailored to your needs, get in touch today.
+				</p>
+			</div>
+			<div class="divider" style="margin-bottom:10px;"></div>
 		</div>
 		<!-- Slider container -->
 		<div class="slider z-depth-3" style="margin-left: auto;margin-right: auto;display: block;">
-		  <!-- slide 1 -->
-		  <div class="slide">
-			<img src="images/scroll_images/slf.png" alt="" />
-		  </div>
-		  
-		  <div class="slide">
-			<img src="images/scroll_images/manu.png" alt="" />
-		  </div>
+			<!-- slide 1 -->
+			<div class="slide">
+				<img src="images/scroll_images/slf.png" alt="" />
+			</div>
 
-		  <!-- slide 2 -->
-		  <div class="slide">
-			<img src="images/scroll_images/vallu.png" alt="" />
-		  </div>
+			<div class="slide">
+				<img src="images/scroll_images/manu.png" alt="" />
+			</div>
 
-		  <!-- slide 3 -->
-		  <div class="slide">
-			<img src="images/scroll_images/bra.png" alt="" />
-		  </div>
+			<!-- slide 2 -->
+			<div class="slide">
+				<img src="images/scroll_images/vallu.png" alt="" />
+			</div>
 
-		  <!-- Control buttons -->
-		  <a class="btn btn-next"><i class="material-icons">navigate_next</i></a>
-		  <a class="btn btn-prev"><i class="material-icons">navigate_before</i></a>
+			<!-- slide 3 -->
+			<div class="slide">
+				<img src="images/scroll_images/bra.png" alt="" />
+			</div>
+
+			<!-- Control buttons -->
+			<a class="btn btn-next"><i class="material-icons">navigate_next</i></a>
+			<a class="btn btn-prev"><i class="material-icons">navigate_before</i></a>
 		</div>
-		
+
 		<div class="divider" style="margin:25px;"></div>
-		
-        <div id="practicearea" class="col s12 m12" ><h4><b>Practice Areas</b></h4></div>
-		
+
+		<div id="practicearea" class="col s12 m12">
+			<h4><b>Practice Areas</b></h4>
+		</div>
+
 		<div id="practice" style="padding:25px;">
-		<div class="row" id="Pa1">
-			<div class="col s2 m1 l1"><img src="images/commercial.png" style="max-width:100%;max-height:100%;"></div><div class="col s4 m2 l2"><h6 style="float:left;">Commercial Litigation</h6></div>
-			<div class="col s2 m1 l1"><img src="images/altdispute.png" style="max-width:100%;max-height:100%;"></div><div class="col s4 m2 l2"><h6 style="float:left;">Alternate Dispute Resolution</h6></div>
-			<div class="col s2 m1 l1"><img src="images/dispute.png" style="max-width:100%;max-height:100%;"></div><div class="col s4 m2 l2"><h6 style="float:left;">Dispute Settlement</h6></div>
-			<div class="col s2 m1 l1"><img src="images/family.png" style="max-width:100%;max-height:100%;"></div><div class="col s4 m2 l2"><h6 style="float:left;">Family Law</h6></div>
-		</div>
-		<div class="row" id="Pa2">
-			<div class="col s2 m1 l1"><img src="images/property.png" style="max-width:100%;max-height:100%;"></div><div class="col s4 m2 l2"><h6 style="float:left;">Property & Real Estate</h6></div>
-			<div class="col s2 m1 l1"><img src="images/constitution.png" style="max-width:100%;max-height:100%;"></div><div class="col s4 m2 l2"><h6 style="float:left;">Constitutional Law</h6></div>
-			<div class="col s2 m1 l1"><img src="images/crime.png" style="max-width:100%;max-height:100%;"></div><div class="col s4 m2 l2"><h6 style="float:left;">Criminal Law</h6></div>
-			<div class="col s2 m1 l1"><img src="images/company.png" style="max-width:100%;max-height:100%;"></div><div class="col s4 m2 l2"><h6 style="float:left;">Company Law</h6></div>
-		</div>
+			<div class="row" id="Pa1">
+				<div class="col s2 m1 l1"><img src="images/commercial.png" style="max-width:100%;max-height:100%;">
+				</div>
+				<div class="col s4 m2 l2">
+					<h6 style="float:left;">Commercial Litigation</h6>
+				</div>
+				<div class="col s2 m1 l1"><img src="images/altdispute.png" style="max-width:100%;max-height:100%;">
+				</div>
+				<div class="col s4 m2 l2">
+					<h6 style="float:left;">Alternate Dispute Resolution</h6>
+				</div>
+				<div class="col s2 m1 l1"><img src="images/dispute.png" style="max-width:100%;max-height:100%;"></div>
+				<div class="col s4 m2 l2">
+					<h6 style="float:left;">Dispute Settlement</h6>
+				</div>
+				<div class="col s2 m1 l1"><img src="images/family.png" style="max-width:100%;max-height:100%;"></div>
+				<div class="col s4 m2 l2">
+					<h6 style="float:left;">Family Law</h6>
+				</div>
+			</div>
+			<div class="row" id="Pa2">
+				<div class="col s2 m1 l1"><img src="images/property.png" style="max-width:100%;max-height:100%;"></div>
+				<div class="col s4 m2 l2">
+					<h6 style="float:left;">Property & Real Estate</h6>
+				</div>
+				<div class="col s2 m1 l1"><img src="images/constitution.png" style="max-width:100%;max-height:100%;">
+				</div>
+				<div class="col s4 m2 l2">
+					<h6 style="float:left;">Constitutional Law</h6>
+				</div>
+				<div class="col s2 m1 l1"><img src="images/crime.png" style="max-width:100%;max-height:100%;"></div>
+				<div class="col s4 m2 l2">
+					<h6 style="float:left;">Criminal Law</h6>
+				</div>
+				<div class="col s2 m1 l1"><img src="images/company.png" style="max-width:100%;max-height:100%;"></div>
+				<div class="col s4 m2 l2">
+					<h6 style="float:left;">Company Law</h6>
+				</div>
+			</div>
 		</div>
 		<div class="row divider"></div>
-	<div id="practicearea" class="col"><h4><b>Testimonials</b></h4></div>
-	<section id="testdata" class="col s12 m12 l12" style="margin-top:-50px;">
-		<div class="card__container swiper">
-		   <div class="card__content">
-			  <div class="swiper-wrapper">
-				 <article class="card__article swiper-slide">
-					<div class="card__image">
-					   <img src="img/thina.png" alt="image" class="card__img">
-					   <div class="card__shadow"></div>
-					</div>
-	 
-					<div class="card__data">
-					   <h3 class="card__name">Thina</h3>
-					   <p class="card__description">
-						  This Guy is the best in business. Heavily Recommended.
-					   </p>
-					</div>
-				 </article>
-	 
-				 <article class="card__article swiper-slide">
-					<div class="card__image">
-					   <img src="img/avatar-2.png" alt="image" class="card__img">
-					   <div class="card__shadow"></div>
-					</div>
-	 
-					<div class="card__data">
-					   <h3 class="card__name">Rahul Ganesh</h3>
-					   <p class="card__description">
-						  Better Call Siddhu for any legal matters. Helped in a Case.
-					   </p>
-					</div>
-				 </article>
-	 
-				 <article class="card__article swiper-slide">
-					<div class="card__image">
-					   <img src="img/avatar-3.png" alt="image" class="card__img">
-					   <div class="card__shadow"></div>
-					</div>
-	 
-					<div class="card__data">
-					   <h3 class="card__name">Sara Mit</h3>
-					   <p class="card__description">
-						  Passionate about development and design, 
-						  I carry out projects at the request of users.
-					   </p>
-					</div>
-				 </article>
-	 
-				 <article class="card__article swiper-slide">
-					<div class="card__image">
-					   <img src="img/avatar-4.png" alt="image" class="card__img">
-					   <div class="card__shadow"></div>
-					</div>
-	 
-					<div class="card__data">
-					   <h3 class="card__name">Jenny Wert</h3>
-					   <p class="card__description">
-						  Passionate about development and design, 
-						  I carry out projects at the request of users.
-					   </p>
-					</div>
-				 </article>
-
-				 <article class="card__article swiper-slide">
-					<div class="card__image">
-					   <img src="img/avatar-5.png" alt="image" class="card__img">
-					   <div class="card__shadow"></div>
-					</div>
-	 
-					<div class="card__data">
-					   <h3 class="card__name">Lexa Kin</h3>
-					   <p class="card__description">
-						  Passionate about development and design, 
-						  I carry out projects at the request of users.
-					   </p>
-					</div>
-				 </article>
-			  </div>
-		   </div>
-
-		   <!-- Navigation buttons -->
-		   <div class="swiper-button-next">
-			  <i class="ri-arrow-right-s-line"></i>
-		   </div>
-		   
-		   <div class="swiper-button-prev">
-			  <i class="ri-arrow-left-s-line"></i>
-		   </div>
-
-		   <!-- Pagination -->
-		   <div class="swiper-pagination"></div>
+		<div id="practicearea" class="col">
+			<h4><b>Testimonials</b></h4>
 		</div>
-	 </section>
-	 </div>
-	 <div class="row divider" style="margin:25px;"></div>
-	<footer id="contactus" class="page-footer black">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-				<div class = "row">
-					<a href="#!" class="col"><img src="images/logo_white.png" width="45" height="50"></a>
-					<span class="col white-text"><h5><b>Sethu Law Firm</b></h5></span>
+		<section id="testdata" class="col s12 m12 l12" style="margin-top:-50px;">
+			<div class="card__container swiper">
+				<div class="card__content">
+					<div class="swiper-wrapper">
+						<article class="card__article swiper-slide">
+							<div class="card__image">
+								<img src="img/thina.png" alt="image" class="card__img">
+								<div class="card__shadow"></div>
+							</div>
+
+							<div class="card__data">
+								<h3 class="card__name">Thina</h3>
+								<p class="card__description">
+									This Guy is the best in business. Heavily Recommended.
+								</p>
+							</div>
+						</article>
+
+						<article class="card__article swiper-slide">
+							<div class="card__image">
+								<img src="img/avatar-2.png" alt="image" class="card__img">
+								<div class="card__shadow"></div>
+							</div>
+
+							<div class="card__data">
+								<h3 class="card__name">Rahul Ganesh</h3>
+								<p class="card__description">
+									Better Call Siddhu for any legal matters. Helped in a Case.
+								</p>
+							</div>
+						</article>
+
+						<article class="card__article swiper-slide">
+							<div class="card__image">
+								<img src="img/avatar-3.png" alt="image" class="card__img">
+								<div class="card__shadow"></div>
+							</div>
+
+							<div class="card__data">
+								<h3 class="card__name">Sara Mit</h3>
+								<p class="card__description">
+									Passionate about development and design,
+									I carry out projects at the request of users.
+								</p>
+							</div>
+						</article>
+
+						<article class="card__article swiper-slide">
+							<div class="card__image">
+								<img src="img/avatar-4.png" alt="image" class="card__img">
+								<div class="card__shadow"></div>
+							</div>
+
+							<div class="card__data">
+								<h3 class="card__name">Jenny Wert</h3>
+								<p class="card__description">
+									Passionate about development and design,
+									I carry out projects at the request of users.
+								</p>
+							</div>
+						</article>
+
+						<article class="card__article swiper-slide">
+							<div class="card__image">
+								<img src="img/avatar-5.png" alt="image" class="card__img">
+								<div class="card__shadow"></div>
+							</div>
+
+							<div class="card__data">
+								<h3 class="card__name">Lexa Kin</h3>
+								<p class="card__description">
+									Passionate about development and design,
+									I carry out projects at the request of users.
+								</p>
+							</div>
+						</article>
+					</div>
 				</div>
-                <p class="grey-text text-lighten-4">Sidhartha Sethupathy,<br>18/1, Ammatchi Amman Koil Street,<br>Kochadai,<br>Madurai -625016.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-					<li class="row"><img class ="col" src="images/fb.png"><a class="col grey-text text-lighten-3" href="https://www.facebook.com/sidhartha.sethupathy/">Facebook</a></li>
-					<li class="row"><img class ="col" src="images/twitter.png"><a class="col grey-text text-lighten-3" href="https://twitter.com/sidhullb">X (Twitter)</a></li>
-					<li class="row"><img class ="col" src="images/insta.png"><a class="col grey-text text-lighten-3" href="https://www.instagram.com/sidhartha_sethupathy/?hl=en">Instagram</a></li>
-					<li class="row"><img class ="col" src="images/linkedin.png"><a class="col grey-text text-lighten-3" href="https://www.linkedin.com/in/sidharthasethupathy/">LinkedIn</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2023 <b>Sidhartha Sethupathy</b>
-            </div>
+
+				<!-- Navigation buttons -->
+				<div class="swiper-button-next">
+					<i class="ri-arrow-right-s-line"></i>
+				</div>
+
+				<div class="swiper-button-prev">
+					<i class="ri-arrow-left-s-line"></i>
+				</div>
+
+				<!-- Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+	</div>
+	<div class="row divider" style="margin:25px;"></div>
+	<footer id="contactus" class="page-footer black">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<div class="row">
+						<a href="#!" class="col"><img src="images/logo_white.png" width="45" height="50"></a>
+						<span class="col white-text">
+							<h5><b>Sethu Law Firm</b></h5>
+						</span>
+					</div>
+					<p class="grey-text text-lighten-4">Sidhartha Sethupathy,<br>18/1, Ammatchi Amman Koil
+						Street,<br>Kochadai,<br>Madurai -625016.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Links</h5>
+					<ul>
+						<li class="row"><img class="col" src="images/fb.png"><a class="col grey-text text-lighten-3"
+								href="https://www.facebook.com/sidhartha.sethupathy/">Facebook</a></li>
+						<li class="row"><img class="col" src="images/twitter.png"><a
+								class="col grey-text text-lighten-3" href="https://twitter.com/sidhullb">X (Twitter)</a>
+						</li>
+						<li class="row"><img class="col" src="images/insta.png"><a class="col grey-text text-lighten-3"
+								href="https://www.instagram.com/sidhartha_sethupathy/?hl=en">Instagram</a></li>
+						<li class="row"><img class="col" src="images/linkedin.png"><a
+								class="col grey-text text-lighten-3"
+								href="https://www.linkedin.com/in/sidharthasethupathy/">LinkedIn</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2023 <b>Sidhartha Sethupathy</b>
+			</div>
 			<div class="row">
 				Made with 🤍 by <b>Rahul Ganesh</b>
 			</div>
-          </div>
-    </footer>
+		</div>
+	</footer>
 
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
-    <script type="module">
-		
-      $( document ).ready(function(){
-		
-		var mycookie = Cookies.get("DisclaimerAgreed");
-        $('.sidenav').sidenav();
-        $('.modal').modal({dismissible:false});
-        if(mycookie==null||mycookie==false){
-			$('#modal1').modal('open');}
-		$('#modalagree').click(function() {
+	<script type="module">
+
+		$(document).ready(function () {
+
+			var mycookie = Cookies.get("DisclaimerAgreed");
+			$('.sidenav').sidenav();
+			$('.modal').modal({ dismissible: false });
+			if (mycookie == null || mycookie == false) {
+				$('#modal1').modal('open');
+			}
+			$('#modalagree').click(function () {
 				Cookies.set("DisclaimerAgreed", true);
 			});
-      });
-	  
+		});
+
 		"use strict";
 		// Select all slides
 		const slides = document.querySelectorAll(".slide");
 
 		// loop through slides and set each slides translateX
 		slides.forEach((slide, indx) => {
-		  slide.style.transform = `translateX(${indx * 100}%)`;
+			slide.style.transform = `translateX(${indx * 100}%)`;
 		});
 
 		// select next slide button
@@ -344,17 +426,17 @@ Explore our website to learn more about Sidhartha's practice and how he can assi
 
 		// add event listener and navigation functionality
 		nextSlide.addEventListener("click", function () {
-		  // check if current slide is the last and reset current slide
-		  if (curSlide === maxSlide) {
-			curSlide = 0;
-		  } else {
-			curSlide++;
-		  }
+			// check if current slide is the last and reset current slide
+			if (curSlide === maxSlide) {
+				curSlide = 0;
+			} else {
+				curSlide++;
+			}
 
-		  //   move slide by -100%
-		  slides.forEach((slide, indx) => {
-			slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-		  });
+			//   move slide by -100%
+			slides.forEach((slide, indx) => {
+				slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+			});
 		});
 
 		// select next slide button
@@ -362,26 +444,27 @@ Explore our website to learn more about Sidhartha's practice and how he can assi
 
 		// add event listener and navigation functionality
 		prevSlide.addEventListener("click", function () {
-		  // check if current slide is the first and reset current slide to last
-		  if (curSlide === 0) {
-			curSlide = maxSlide;
-		  } else {
-			curSlide--;
-		  }
+			// check if current slide is the first and reset current slide to last
+			if (curSlide === 0) {
+				curSlide = maxSlide;
+			} else {
+				curSlide--;
+			}
 
-		  //   move slide by 100%
-		  slides.forEach((slide, indx) => {
-			slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-		  });
+			//   move slide by 100%
+			slides.forEach((slide, indx) => {
+				slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+			});
 		});
 
-    </script>
+	</script>
 
-	      <!--=============== SWIPER JS ===============-->
-		  <script src="js/swiper-bundle.min.js"></script>
+	<!--=============== SWIPER JS ===============-->
+	<script src="js/swiper-bundle.min.js"></script>
 
-		  <!--=============== MAIN JS ===============-->
-		  <script src="js/main.js"></script>
-    
-  </body>
+	<!--=============== MAIN JS ===============-->
+	<script src="js/main.js"></script>
+
+</body>
+
 </html>
