@@ -8,6 +8,15 @@
   border-radius: 15px;
 }
 
+.responsive {
+  width: 60%;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  height: auto;
+  max-height:70%;
+}
+
 .slide {
   width: 100%;
   max-width: 1280px;

@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
   <head>
 		<link rel="icon" href="images/favicon.ico"/>
       <!--Import Google Icon Font-->
@@ -15,6 +15,23 @@
         font-weight: 400 !important;
       }
       </style>
+	  <style type="text/css">
+		.mobileshow { 
+		display:none; 
+		}
+		@media screen and (max-width: 600px) {
+		.mobileshow { 
+		display:block; }
+		}
+		.pcshow { 
+		display:none; 
+		}
+		@media screen and (min-width: 600px) {
+		.pcshow { 
+		display:block; }
+		}
+		
+		</style>
     </head>
   <body>
     
@@ -57,11 +74,27 @@
     </div>
 
     <div id="mainpage" class="row">
-	<div class="row">
-      <div class="col s12 m6 l6">
+	<div class="row pcshow" style="background-color:black;padding:5px;">
+		<img class="col m6 l6 responsive" src="images/coverimage.png">
+		<div class="col m6 l6 responsive">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/sidhu.png" style="width:20%;height:auto;margin-top:10px;margin-left:auto;margin-right:auto;display:block;">
+            </div>
+            <div class="card-content">
+              <h4 class="center-align"><b>Sidhartha Sethupathy</b></h4>
+              <h6 class="center-align">Advocate.<br>Phone : 8760444693<br>Mail : sidharthasethupathy@gmail.com<br><br>
+                <a class="out_btn waves-effect waves-black white btn-large" href="mailto:sidharthasethupathy@gmail.com"><i class="material-icons left">mail</i>Mail Advocate</a>
+              </h6>
+            </div>
+          </div>
+        </div>
+	</div>
+	<div class="row mobileshow">
+      <div class="col s12">
           <div class="card z-depth-3">
             <div class="card-image">
-              <img src="images/sidhu.png" style="width:300px; height:auto;margin-left:auto;margin-right:auto;display:block;">
+              <img src="images/sidhu.png" style="width:200px;height:auto;margin-left:auto;margin-right:auto;display:block;">
             </div>
             <div class="card-content">
               <h4 class="center-align"><b>Sidhartha Sethupathy</b></h4>
@@ -72,7 +105,9 @@
             </div>
           </div>
         </div>
-		<div id="about0" class="col s12 m6 l6" style="margin-top:15px;margin-bottom:15px;"><h4><b>About</b></h4></div>
+	</div>
+	<div class="row">
+		<div id="about0" class="col s12" style="margin-top:15px;margin-bottom:15px;"><h4><b>About</b></h4></div>
 		<div style="padding:25px;">
 				<p id="about00">Welcome to the legal practice of Sidhartha Sethupathy, an esteemed lawyer dedicated to serving Madurai and its surrounding communities. With a passion for justice and a commitment to client advocacy, Sidhartha brings a wealth of experience and expertise to every case he handles.
 <br><br>
@@ -198,10 +233,10 @@ Explore our website to learn more about Sidhartha's practice and how he can assi
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
-    <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
-    <script>
+    <script type="module">
+		
       $( document ).ready(function(){;
 		var mycookie = Cookies.get("DisclaimerAgreed");
         $('.sidenav').sidenav();
