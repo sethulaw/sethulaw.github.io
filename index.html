@@ -7,6 +7,17 @@
 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 		<link type="text/css" rel="stylesheet" href="css/carousel.css"  media="screen,projection"/>
 		<link type="text/css" rel="stylesheet" href="css/practice_area.css"  media="screen,projection"/>
+		<meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+		      <!--=============== REMIXICONS ===============-->
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+			  <!--=============== SWIPER CSS ===============-->
+			  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+		
+			  <!--=============== CSS ===============-->
+			  <link rel="stylesheet" href="css/styles.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <style>
       .sidenav li>a {padding:0 32px !important}
@@ -73,7 +84,7 @@
       </div>
     </div>
 
-    <div id="mainpage" class="row">
+    <div>
 	<div class="row pcshow" style="background-color:black;padding:5px;">
 		<img class="col m6 l6 responsive" src="images/coverimage.png">
 		<div class="col m6 l6 responsive">
@@ -151,9 +162,9 @@ Explore our website to learn more about Sidhartha's practice and how he can assi
 		
 		<div class="divider" style="margin:25px;"></div>
 		
-        <div id="practicearea" class="col s12 m12" style="margin-bottom:15px;"><h4><b>Practice Areas</b></h4></div>
+        <div id="practicearea" class="col s12 m12" ><h4><b>Practice Areas</b></h4></div>
 		
-		<div id="practice" class="row" style="padding:25px;">
+		<div id="practice" style="padding:25px;">
 		<div class="row" id="Pa1">
 			<div class="col s2 m1 l1"><img src="images/commercial.png" style="max-width:100%;max-height:100%;"></div><div class="col s4 m2 l2"><h6 style="float:left;">Commercial Litigation</h6></div>
 			<div class="col s2 m1 l1"><img src="images/altdispute.png" style="max-width:100%;max-height:100%;"></div><div class="col s4 m2 l2"><h6 style="float:left;">Alternate Dispute Resolution</h6></div>
@@ -166,38 +177,103 @@ Explore our website to learn more about Sidhartha's practice and how he can assi
 			<div class="col s2 m1 l1"><img src="images/crime.png" style="max-width:100%;max-height:100%;"></div><div class="col s4 m2 l2"><h6 style="float:left;">Criminal Law</h6></div>
 			<div class="col s2 m1 l1"><img src="images/company.png" style="max-width:100%;max-height:100%;"></div><div class="col s4 m2 l2"><h6 style="float:left;">Company Law</h6></div>
 		</div>
-		
-		<section class="row practice_slider">
-		<div class="practice-slider">
-        <div>
-          <img class="practice_content" alt="bmw logo" id="bmw" src="./images/pas/cl.png" />
-          <img alt="chevrolet logo" id="chevrolet" src="./images/pas/adr.png"/>
-          <img alt="ford logo" id="ford" src="./images/pas/ds.png" />
-          <img alt="honda logo" id="honda" src="./images/pas/fl.png" />
-          <img alt="hyundai logo" id="hyundai" src="./images/pas/prop.png" />
-          <img alt="mercedes logo" id="mercedes" src="./images/pas/const.png" />
-          <img alt="skoda logo" id="skoda" src="./images/pas/crim.png" />
-          <img alt="subaru logo" id="subaru" src="./images/pas/comp.png" />
-        </div>
-		<div>
-          <img class="practice_content" alt="bmw logo" id="bmw" src="./images/pas/cl.png" />
-          <img alt="chevrolet logo" id="chevrolet" src="./images/pas/adr.png"/>
-          <img alt="ford logo" id="ford" src="./images/pas/ds.png" />
-          <img alt="honda logo" id="honda" src="./images/pas/fl.png" />
-          <img alt="hyundai logo" id="hyundai" src="./images/pas/prop.png" />
-          <img alt="mercedes logo" id="mercedes" src="./images/pas/const.png" />
-          <img alt="skoda logo" id="skoda" src="./images/pas/crim.png" />
-          <img alt="subaru logo" id="subaru" src="./images/pas/comp.png" />
-        </div>
 		</div>
-		</section>
 		<div class="row divider"></div>
+	<div id="practicearea" class="col"><h4><b>Testimonials</b></h4></div>
+	<section id="testdata" class="col s12 m12 l12" style="margin-top:-50px;">
+		<div class="card__container swiper">
+		   <div class="card__content">
+			  <div class="swiper-wrapper">
+				 <article class="card__article swiper-slide">
+					<div class="card__image">
+					   <img src="img/thina.png" alt="image" class="card__img">
+					   <div class="card__shadow"></div>
+					</div>
+	 
+					<div class="card__data">
+					   <h3 class="card__name">Thina</h3>
+					   <p class="card__description">
+						  This Guy is the best in business. Heavily Recommended.
+					   </p>
+					</div>
+				 </article>
+	 
+				 <article class="card__article swiper-slide">
+					<div class="card__image">
+					   <img src="img/avatar-2.png" alt="image" class="card__img">
+					   <div class="card__shadow"></div>
+					</div>
+	 
+					<div class="card__data">
+					   <h3 class="card__name">Rahul Ganesh</h3>
+					   <p class="card__description">
+						  Better Call Siddhu for any legal matters. Helped in a Case.
+					   </p>
+					</div>
+				 </article>
+	 
+				 <article class="card__article swiper-slide">
+					<div class="card__image">
+					   <img src="img/avatar-3.png" alt="image" class="card__img">
+					   <div class="card__shadow"></div>
+					</div>
+	 
+					<div class="card__data">
+					   <h3 class="card__name">Sara Mit</h3>
+					   <p class="card__description">
+						  Passionate about development and design, 
+						  I carry out projects at the request of users.
+					   </p>
+					</div>
+				 </article>
+	 
+				 <article class="card__article swiper-slide">
+					<div class="card__image">
+					   <img src="img/avatar-4.png" alt="image" class="card__img">
+					   <div class="card__shadow"></div>
+					</div>
+	 
+					<div class="card__data">
+					   <h3 class="card__name">Jenny Wert</h3>
+					   <p class="card__description">
+						  Passionate about development and design, 
+						  I carry out projects at the request of users.
+					   </p>
+					</div>
+				 </article>
+
+				 <article class="card__article swiper-slide">
+					<div class="card__image">
+					   <img src="img/avatar-5.png" alt="image" class="card__img">
+					   <div class="card__shadow"></div>
+					</div>
+	 
+					<div class="card__data">
+					   <h3 class="card__name">Lexa Kin</h3>
+					   <p class="card__description">
+						  Passionate about development and design, 
+						  I carry out projects at the request of users.
+					   </p>
+					</div>
+				 </article>
+			  </div>
+		   </div>
+
+		   <!-- Navigation buttons -->
+		   <div class="swiper-button-next">
+			  <i class="ri-arrow-right-s-line"></i>
+		   </div>
+		   
+		   <div class="swiper-button-prev">
+			  <i class="ri-arrow-left-s-line"></i>
+		   </div>
+
+		   <!-- Pagination -->
+		   <div class="swiper-pagination"></div>
 		</div>
-		
-		</div>
-      </div>
-    </div>
-	
+	 </section>
+	 </div>
+	 <div class="row divider" style="margin:25px;"></div>
 	<footer id="contactus" class="page-footer black">
           <div class="container">
             <div class="row">
@@ -227,7 +303,7 @@ Explore our website to learn more about Sidhartha's practice and how he can assi
 				Made with 🤍 by <b>Rahul Ganesh</b>
 			</div>
           </div>
-        </footer>
+    </footer>
 
     
     
@@ -237,7 +313,8 @@ Explore our website to learn more about Sidhartha's practice and how he can assi
 
     <script type="module">
 		
-      $( document ).ready(function(){;
+      $( document ).ready(function(){
+		
 		var mycookie = Cookies.get("DisclaimerAgreed");
         $('.sidenav').sidenav();
         $('.modal').modal({dismissible:false});
@@ -299,6 +376,12 @@ Explore our website to learn more about Sidhartha's practice and how he can assi
 		});
 
     </script>
+
+	      <!--=============== SWIPER JS ===============-->
+		  <script src="js/swiper-bundle.min.js"></script>
+
+		  <!--=============== MAIN JS ===============-->
+		  <script src="js/main.js"></script>
     
   </body>
 </html>
