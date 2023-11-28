@@ -8,6 +8,10 @@
   border-radius: 15px;
 }
 
+.blackandwhite{
+  filter: grayscale(100);
+}
+
 .responsive {
   width: 60%;
   margin-left:auto;
