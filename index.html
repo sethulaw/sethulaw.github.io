@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 
 <head>
-	
-<!-- Google tag (gtag.js) -->
+
+	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YF55VXK7ZR"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-	gtag('config', 'G-YF55VXK7ZR');
+		gtag('config', 'G-YF55VXK7ZR');
 	</script>
+
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-WL6D5T9N');</script>
+	<!-- End Google Tag Manager -->
 
 	<link rel="icon" href="images/logo_favicon.ico" />
 	<!--Import Google Icon Font-->
@@ -67,6 +78,11 @@
 
 <body>
 
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WL6D5T9N" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
 	<div class="navbar-fixed">
 		<nav>
 			<div class="nav-wrapper black">
@@ -103,7 +119,13 @@
 				<br>There has been no advertisement, personal communication, solicitation, invitation or inducement of
 				any sort whatsoever from us or any of our members to solicit any work through this website.
 
-				<br>The user wishes to gain more information about us for his/her own information and use.
+				<br>The user wishes to gain more information about us for his/her own information and use.<br>
+
+				Please be aware that this website utilizes Google Analytics to collect data for the purpose of
+				analyzing user traffic and behavior. The collected data is used solely for improving user
+				experience and optimizing content. By using this website, you consent to the processing of data by
+				Google Analytics for the aforementioned purposes. To understand how Google Analytics collects and
+				processes data, please refer to Google's Privacy Policy.
 			</p>
 		</div>
 		<div class="modal-footer">
@@ -124,7 +146,7 @@
 						<h4 class="center-align"><b>Sidhartha Sethupathy</b></h4>
 						<h6 class="center-align">Advocate.<br>Phone : 8760444693<br>Mail :
 							sidharthasethupathy@gmail.com<br><br>
-							<a class="out_btn waves-effect waves-black white btn-large"
+							<a id="pcmailadv" class="out_btn waves-effect waves-black white btn-large"
 								href="mailto:sidharthasethupathy@gmail.com"><i class="material-icons left">mail</i>Mail
 								Advocate</a>
 						</h6>
@@ -143,9 +165,9 @@
 						<h4 class="center-align"><b>Sidhartha Sethupathy</b></h4>
 						<h6 class="center-align">Advocate.<br>Phone : 8760444693<br>Mail :
 							sidharthasethupathy@gmail.com<br><br>
-							<a class="waves-effect waves-light black btn-large" href="tel:8760444693"><i
+							<a id="calladv" class="waves-effect waves-light black btn-large" href="tel:8760444693"><i
 									class="material-icons left">call</i>Call Advocate</a><br><br>
-							<a class="out_btn waves-effect waves-black white btn-large"
+							<a id="mobmailadv" class="out_btn waves-effect waves-black white btn-large"
 								href="mailto:sidharthasethupathy@gmail.com"><i class="material-icons left">mail</i>Mail
 								Advocate</a>
 						</h6>
