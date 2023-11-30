@@ -28,6 +28,11 @@
   margin: 0;
 }
 
+.body_content{
+  padding-top: 6vh;
+  padding-left: 2vh;
+ }
+
 
 a {
   text-decoration: none;
