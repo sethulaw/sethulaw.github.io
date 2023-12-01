@@ -163,6 +163,10 @@ img {
     padding: 1rem;
     min-height: 50vh;
   }
+
+  .lottie_size{
+    max-width:80%;
+  }
 }
 
 /* For medium devices */
@@ -174,6 +178,11 @@ img {
   .swiper-button-next,
   .swiper-button-prev {
     display: block;
+  }
+
+  .lottie_size{
+    max-width:50%;
+    max-height: 50%;
   }
 }
 
@@ -188,5 +197,10 @@ img {
   }
   .swiper-button-next {
     right: -1rem;
+  }
+
+  .lottie_size{
+    max-width:50%;
+    max-height: 50%;
   }
 }
