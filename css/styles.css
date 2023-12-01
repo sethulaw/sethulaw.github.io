@@ -161,6 +161,7 @@ img {
 @media screen and (max-width: 320px) {
   .card__data {
     padding: 1rem;
+    min-height: 50vh;
   }
 }
 
