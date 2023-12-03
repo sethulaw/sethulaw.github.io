@@ -28,14 +28,14 @@
   margin: 0;
 }
 
-.body_content{
+.body_content {
   padding-top: 6vh;
   padding-left: 2vh;
- }
+}
 
- .body_content1{
+.body_content1 {
   padding-top: 6vh;
- }
+}
 
 
 
@@ -61,7 +61,8 @@ img {
 }
 
 .card__article {
-  width: 300px; /* Remove after adding swiper js */
+  width: 300px;
+  /* Remove after adding swiper js */
   border-radius: 1.25rem;
   overflow: hidden;
 }
@@ -102,6 +103,7 @@ img {
   margin-inline: auto;
   filter: blur(45px);
 }
+
 
 .card__name {
   font-size: var(--h2-font-size);
@@ -164,8 +166,12 @@ img {
     min-height: 50vh;
   }
 
-  .lottie_size{
-    max-width:80%;
+  .lottie_size {
+    max-width: 80%;
+  }
+
+  .practice_area_padding{
+    padding: 50px;
   }
 }
 
@@ -180,9 +186,15 @@ img {
     display: block;
   }
 
-  .lottie_size{
-    max-width:50%;
+  .lottie_size {
+    max-width: 50%;
     max-height: 50%;
+  }
+
+  .practice_area_padding{
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -195,12 +207,19 @@ img {
   .swiper-button-prev {
     left: -1rem;
   }
+
   .swiper-button-next {
     right: -1rem;
   }
 
-  .lottie_size{
-    max-width:50%;
+  .lottie_size {
+    max-width: 50%;
     max-height: 50%;
+  }
+
+  .practice_area_padding{
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
 }
